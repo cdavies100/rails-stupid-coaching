@@ -1,4 +1,12 @@
 <h2><%= @question %>question</h2>
 <h3><%= @answer %>answer</h3>
 
+<% if @query == "I am going to work right now!" %>
+<p><%= "WELL DONE" %></p>
+<% elsif @query.include? "?" %>
+<p><%= "Silly question, get dressed and go to work!" %>
+<% else %>
+<p> <%= "What are you doing....." %>
+<% end %>
+
 <%= link_to 'Ask a new question', ask_path %>
