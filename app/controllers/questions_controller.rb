@@ -1,7 +1,7 @@
 class QuestionsController < ApplicationController
   def answer
     @query = params[:query]
-    @answer = "What did you say?"
+    @answer = "Answer:"
   end
 
   def ask
